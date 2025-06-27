@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, blue, green, red);
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: auto; /* 清除浮动 */
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #555 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        #showcase {
+            background: url('showcase.jpg') no-repeat center center/cover;
+            min-height: 400px;
+            text-align: center;
+            color: #fff;
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        #newsletter {
+            padding: 15px;
+            color: #fff;
+            background: #333;
+        }
+        #newsletter h2 {
+            float: left;
+        }
+        #newsletter form {
+            float: right;
+            margin-top: 5px;
+        }
+        #newsletter input[type="email"] {
+            padding: 4px;
+            height: 25px;
+            width: 250px;
+        }
+        #newsletter input[type="submit"] {
+            padding: 4px 10px;
+            background: #e8491d;
+            border: 0;
+            color: #fff;
+        }
+        #boxes {
+            margin-top: 20px;
+            overflow: auto; /* 清除浮动 */
+        }
+        #boxes .box {
+            float: left;
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+        }
+        #boxes .box img {
+            width: 90px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>我的个人主页</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">主页</a></li>
+                    <li><a href="#">关于我</a></li>
+                    <li><a href="#">我的作品</a></li>
+                    <li><a href="#">联系我</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>欢迎来到我的个人主页</h1>
+            <p>这里是关于我的一些信息和作品展示</p>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h2>订阅我的最新动态</h2>
+            <form>
+                <input type="email" placeholder="输入邮箱...">
+                <button type="submit" class="button_1">订阅</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="html5.png">
+                <h3>HTML5</h3>
+                <p>我擅长使用HTML进行网页设计</p>
+            </div>
+            <div class="box">
+                <img src="css3.png">
+                <h3>CSS3</h3>
+                <p>我熟练掌握CSS，能够设计出精美的网页样式</p>
+            </div>
+            <div class="box">
+                <img src="javascript.png">
+                <h3>JavaScript</h3>
+                <p>我能够使用JavaScript为网页添加交互功能</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>版权所有 &copy; 2024</p>
+    </footer>
+</body>
+</html>
